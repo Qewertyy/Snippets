@@ -1,5 +1,4 @@
 export function ContactUs() {
-  const { classes } = useStyles();
   const [state,setState] = useState(false);
   const [contactData, setContactData] = useState({
     name: "",
