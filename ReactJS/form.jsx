@@ -21,6 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+import {useState} from 'React';
 
 export function ContactUs() {
   const [state,setState] = useState(false);
@@ -62,7 +63,7 @@ export function ContactUs() {
             {state && (<div>
               <p ff='inherit'>Message Sent, Thank you for contacting us!</p>
             </div>)}
-            <TextInput
+            <input
               label="Name"
               placeholder="Wh"
               required
@@ -70,7 +71,7 @@ export function ContactUs() {
               onChange={handleChange}
               error={errors.name}
               />
-            <Textarea
+            <input
               required
               label="Your message"
               placeholder="I want to enquire about.."
