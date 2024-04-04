@@ -22,7 +22,7 @@ function getLocalFileHash(filePath) {
 }
 
 
-async function getArrayBufferFileHash(url) {
+async function getFileHashfrmURL(url) {
     const res = await fetch(url)
     const arBuf = await res.arrayBuffer()
     const hash = crypto.createHash('sha256');
