@@ -1,1 +1,1 @@
-Some Snips i made.
+Some scripts/codes by me
