@@ -3,7 +3,6 @@ type file = {
     mime: string
 }
 
-//ref = https://github.com/Qewertyy/Icons8-Upscaler/blob/main/src/index.ts#L100
 function guessMimeType(file: Buffer){
   const signature = file.toString("hex", 0, 4);
   const signatureExtended = file.toString("hex", 0, 12); // Used for WebP and HEIC/HEIF files
